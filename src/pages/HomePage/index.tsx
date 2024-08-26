@@ -2,6 +2,7 @@ import { FC } from 'react'
 import reactLogo from '../../assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Button } from '@/components'
+import { Banner } from './components'
 
 export const HomePage: FC = () => {
   return (
@@ -24,6 +25,7 @@ export const HomePage: FC = () => {
         />
       </a>
       <Button label="Click Me" />
+      <Banner />
     </main>
   )
 }
