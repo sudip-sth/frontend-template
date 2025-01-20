@@ -37,4 +37,7 @@ I was in need of a good, solid, reliable and fast boilerplate to work with React
 
 MIT
 
+## References
+- <a href="https://atomicdesign.bradfrost.com/chapter-2/">Atomic Design</a>
+
 
