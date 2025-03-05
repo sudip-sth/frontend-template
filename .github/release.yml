@@ -1,5 +1,14 @@
 # .github/release.yml
 
+
+release:
+  name: Release ${{ github.event.release.tag_name }}
+  tag_name: ${{ github.event.release.tag_name }}
+  body: |
+    ## Release Date: ${{ github.event.release.created_at }}
+    ## What's Changed
+    ${{ github.event.release.body }}
+
 changelog:
   exclude:
     labels:
