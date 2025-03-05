@@ -6,6 +6,7 @@ release:
   tag_name: ${{ github.event.release.tag_name }}
   body: |
     ## Release Date: ${{ github.event.release.created_at }}
+    
     ## What's Changed
     ${{ github.event.release.body }}
 
@@ -16,12 +17,13 @@ changelog:
     authors:
       - octocat
   categories:
-    - title: Breaking Changes 🛠
-     
     - title: Exciting New Features 🎉
       labels:
-        - Semver-Minor
-        - enhancement
+        - new feature
+    - title: BugFix
+      labels:
+        - tech debt
+        - bugfix
     - title: Other Changes
       labels:
         - "*"
